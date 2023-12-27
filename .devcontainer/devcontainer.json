@@ -26,5 +26,10 @@
         }
 	},
 	"updateContentCommand": "npm install -g @devcontainers/cli",
-	"postCreateCommand": "python3 -m pip install jupyter dash pandas"
+	"postCreateCommand": [
+		"apt-get update",
+		"apt-get install -y python3-full pip pipx",
+		"sudo apt install jupyter dash -y",
+		"sudo apt install python3-pandas -y"
+	]
 }

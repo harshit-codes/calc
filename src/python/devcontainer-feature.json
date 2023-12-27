@@ -39,7 +39,7 @@
       },
       "installJupyterlab": {
         "type": "boolean",
-        "default": false,
+        "default": true,
         "description": "Install JupyterLab, a web-based interactive development environment for notebooks"
       },
       "configureJupyterlabAllowOrigin": {
