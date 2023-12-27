@@ -20,8 +20,9 @@
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
             "packages": "chromium"
         },
+		"ghcr.io/devcontainers/features/python:1": {},
 		"ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {}
 	},
 	"updateContentCommand": "npm install -g @devcontainers/cli",
-	"postCreateCommand": "python3 -m pip install jupyter"
+	"postCreateCommand": "python3 -m pip install jupyter dash pandas"
 }
